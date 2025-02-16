@@ -1,0 +1,13 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "workers-research"
+main = "src/index.tsx"
+compatibility_date = "2025-01-28"
+workers_dev = false
+
+[observability]
+enabled = true
+
+[[workflows]]
+name = "workers-reseacher-workflow"
+binding = "RESEARCH_WORKFLOW"
+class_name = "ResearchWorkflow"
